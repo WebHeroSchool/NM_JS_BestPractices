@@ -4,11 +4,11 @@ ________________________________________________________________________________
 ## 1. Use expanded syntax
 ************************************************************************************
 > This maximizes readability
->> BAD :-(
+>> BAD 😕
 ```js
 function myFunc() { console.log('Hello!'); }
 ```
->> GOOD 8-)
+>> GOOD 😎
 ```js
 function myFunc() {
   console.log('Hello!');
@@ -125,6 +125,7 @@ let name = 'Natasha';
 ```js
    let sum = function(a, b) {
          return a + b;
+}
 ```
 
 >> GOOD 8-)

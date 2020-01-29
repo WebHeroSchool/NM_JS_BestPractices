@@ -72,5 +72,43 @@ let name = 'Natasha';
     function sum(num1, num2) {}
    ```    
 
-## 6. 
+## 6. Use single quotes in JavaScript, wherever single quotes are needed in syntax.
 
+>>  `BAD`:
+```js
+    let str = "string";
+```
+    >> GOOD:
+  ```js
+    let str = 'string';
+   ``` 
+## 7. For variable names use lowerCamelCasing, and use concise, human-readable, semantic names where appropriate.
+   >>  `BAD`:
+```js
+    let thisIsaveryLONGVariableThatRecordsPlayerscore345654 = 0;
+    let s = d/t;
+```
+  >> GOOD:
+  ```js
+    let playerScore = 0;
+    let speed = distance / time;
+   ``` 
+## 8. When inserting strings into DOM nodes, use Node.textContent not innerHTML
+> Because textContent is a lot more efficient, and less error-prone than innerHTML.
+
+ >>  `BAD`: 
+```js
+    let text = 'Hello to all you good people';
+    const para = document.createElement('p');
+    para.innerHTML = text;
+   
+```
+
+  >> GOOD:
+  ```js
+    let text = 'Hello to all you good people';
+    const para = document.createElement('p');
+    para.textContent = text;
+```
+
+## 9. 

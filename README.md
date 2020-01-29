@@ -111,4 +111,30 @@ let name = 'Natasha';
     para.textContent = text;
 ```
 
-## 9. 
+## 9. Where possible, use the function declaration to define functions over function expressions:
+>>  `BAD`: 
+```js
+   let sum = function(a, b) {
+         return a + b;
+```
+
+  >> GOOD:
+  ```js
+    function sum(a, b) {
+      return a + b;
+    }
+```
+## 10. When using anonymous functions inside a method that requires a function as a parameter, it is acceptable (although not required) to use an arrow function to make the code shorter and cleaner.
+>>  `BAD`: 
+```js
+    const array1 = [1, 2, 3, 4];
+    let sum = array.reduce(function(a, b) {
+      return a + b;  
+    });
+```
+
+  >> GOOD:
+  ```js
+    const array = [1, 2, 3, 4];
+    let sum = array.reduce((a, b) => a + b);
+```

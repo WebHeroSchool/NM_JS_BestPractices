@@ -21,15 +21,14 @@ function myFunc() {
 > Code will be more readable
 
 
->> `BAD`:
+>> BAD :-(
 
 ```js
 if(dayOfWeek===7&&weather==='sunny'){
   goOnTrip('beach','car',['ice cream','bucket and spade','beach towel']);
 }
 ```
-
->> GOOD:
+>> GOOD 8-)
 ```js
 if(dayOfWeek === 7 && weather === 'sunny') {
   goOnTrip('beach', 'car', ['ice cream', 'bucket and spade', 'beach towel']);
@@ -40,13 +39,12 @@ if(dayOfWeek === 7 && weather === 'sunny') {
 
 > We require them in all of our code samples even though they're technically optional in JavaScript because we feel that it leads to code that is clearer and more precise about where each statement ends.
 
->> `BAD`:
+>> BAD :-(
 ```js
 let name = 'Natasha'
 
 ```
-
->> GOOD:
+>> GOOD 8-)
 ```js
 let name = 'Natasha';
 
@@ -54,13 +52,12 @@ let name = 'Natasha';
 ## 4. Don't include padding spaces after opening brackets or before closing brackets — (myVar), not ( myVar ). 
  ************************************************************************************
      
-  >> `BAD`:
+>> BAD :-(
   ```js
   function sum( num1, num2 ){}
   
   ```
-  
-  >> GOOD:
+>> GOOD 8-)
   ```js
   function sum(num1, num2){}
  ``` 
@@ -68,12 +65,12 @@ let name = 'Natasha';
 ## 5. There should be no space between a control statement keyword, function, or loop keyword and its opening parenthesis (e.g. if() { ... }, function myFunc() { ... }, for(...) { ... }).
 ## There should be a space between the parentheses and the opening curly brace
 ************************************************************************************
- >>  `BAD`:
+>> BAD :-(
 
 ```js
     function sum (num1, num2){}
 ```
-    >> GOOD:
+>> GOOD 8-)
   ```js
     function sum(num1, num2) {}
    ```    
@@ -81,22 +78,22 @@ let name = 'Natasha';
 ## 6. Use single quotes in JavaScript, wherever single quotes are needed in syntax.
 ************************************************************************************
 
->>  `BAD`:
+>> BAD :-(
 ```js
     let str = "string";
 ```
-    >> GOOD:
+>> GOOD 8-)
   ```js
     let str = 'string';
    ``` 
 ## 7. For variable names use lowerCamelCasing, and use concise, human-readable, semantic names where appropriate.************************************************************************************
 ************************************************************************************
-  >>  `BAD`:
+>> BAD :-(
 ```js
     let thisIsaveryLONGVariableThatRecordsPlayerscore345654 = 0;
     let s = d/t;
 ```
-  >> GOOD:
+ >> GOOD 8-)
   ```js
     let playerScore = 0;
     let speed = distance / time;
@@ -106,7 +103,7 @@ let name = 'Natasha';
 
 > Because textContent is a lot more efficient, and less error-prone than innerHTML.
 
- >>  `BAD`: 
+>> BAD :-(
 ```js
     let text = 'Hello to all you good people';
     const para = document.createElement('p');
@@ -114,7 +111,7 @@ let name = 'Natasha';
    
 ```
 
-  >> GOOD:
+>> GOOD 8-)
   ```js
     let text = 'Hello to all you good people';
     const para = document.createElement('p');
@@ -124,13 +121,13 @@ let name = 'Natasha';
 ## 9. Where possible, use the function declaration to define functions over function expressions:
 ************************************************************************************
 
->>  `BAD`: 
+>> BAD :-(
 ```js
    let sum = function(a, b) {
          return a + b;
 ```
 
-  >> GOOD:
+>> GOOD 8-)
   ```js
     function sum(a, b) {
       return a + b;
@@ -139,7 +136,7 @@ let name = 'Natasha';
 ## 10. When using anonymous functions inside a method that requires a function as a parameter, it is acceptable (although not required) to use an arrow function to make the code shorter and cleaner.
 ************************************************************************************
 
->>  `BAD`: 
+>> BAD :-(
 ```js
     const array1 = [1, 2, 3, 4];
     let sum = array.reduce(function(a, b) {
@@ -147,7 +144,7 @@ let name = 'Natasha';
     });
 ```
 
-  >> GOOD:
+ >> GOOD 8-)
   ```js
     const array = [1, 2, 3, 4];
     let sum = array.reduce((a, b) => a + b);
